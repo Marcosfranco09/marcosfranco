@@ -68,6 +68,7 @@ export default function Hero() {
 
             <RippleButton
               className="btn-neon-outline w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold tracking-widest text-cyan-400 border border-cyan-400/50 uppercase text-sm"
+              onClick={() => window.open('/CV-Marcos-Franco.pdf', '_blank')}
             >
               <FaDownload /> Descargar CV
             </RippleButton>
