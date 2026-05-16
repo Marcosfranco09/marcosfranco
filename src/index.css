@@ -126,9 +126,11 @@ body {
   pointer-events: none;
 }
 
-.card-shine:hover::before {
-  left: 150%;
-  transition: left 0.7s ease;
+@media (hover: hover) {
+  .card-shine:hover::before {
+    left: 150%;
+    transition: left 0.7s ease;
+  }
 }
 
 /* ─── Gradient Border Card ─── */
@@ -162,8 +164,10 @@ body {
   pointer-events: none;
 }
 
-.gradient-border-card:hover::after {
-  opacity: 1;
+@media (hover: hover) {
+  .gradient-border-card:hover::after {
+    opacity: 1;
+  }
 }
 
 /* ─── Code decoration ─── */
@@ -271,7 +275,13 @@ body {
   box-shadow: 0 0 8px rgba(0, 229, 255, 0.8);
 }
 
-.nav-link:hover::after,
+@media (hover: hover) {
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%;
+  }
+}
+
 .nav-link.active::after {
   width: 100%;
 }
@@ -288,10 +298,12 @@ body {
 .btn-neon {
   transition: all 0.3s ease;
 }
-.btn-neon:hover {
-  background: #00e5ff !important;
-  color: #050a0e !important;
-  box-shadow: 0 0 20px rgba(0, 229, 255, 0.5);
+@media (hover: hover) {
+  .btn-neon:hover {
+    background: #00e5ff !important;
+    color: #050a0e !important;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.5);
+  }
 }
 
 .btn-neon-outline {
@@ -299,9 +311,11 @@ body {
   color: #00e5ff;
   transition: all 0.3s ease;
 }
-.btn-neon-outline:hover {
-  background: rgba(0, 229, 255, 0.1);
-  box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+@media (hover: hover) {
+  .btn-neon-outline:hover {
+    background: rgba(0, 229, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+  }
 }
 
 /* ─── Waveform decoration ─── */

@@ -59,10 +59,10 @@ function KaraokeFlow() {
       
       {/* Step 1: Cliente */}
       <div className="relative z-10 flex flex-col items-center group/item shrink-0">
-        <div className="w-20 h-20 md:w-48 md:h-48 transition-all group-hover/item:scale-105 duration-300 drop-shadow-[0_0_25px_rgba(0,229,255,0.4)]">
+        <div className="w-20 h-20 md:w-48 md:h-48 transition-all md:group-hover/item:scale-105 duration-300 drop-shadow-[0_0_25px_rgba(0,229,255,0.4)]">
           <img src="/cliente.png" alt="Cliente" className="w-full h-full object-contain" />
         </div>
-        <span className="text-[10px] md:text-[11px] font-mono font-bold text-cyan-400 mt-1 uppercase tracking-widest bg-[#050a0e]/80 px-2 py-0.5 rounded-full border border-cyan-400/20">Cliente</span>
+        <span className="text-[9px] md:text-[11px] font-mono font-bold text-cyan-400 mt-1 uppercase tracking-widest bg-[#050a0e]/80 px-2 py-0.5 rounded-full border border-cyan-400/20">Cliente</span>
       </div>
 
       {/* Connection 1: Simple Line */}
@@ -70,10 +70,10 @@ function KaraokeFlow() {
 
       {/* Step 2: DJ */}
       <div className="relative z-10 flex flex-col items-center group/item shrink-0">
-        <div className="w-20 h-20 md:w-44 md:h-44 transition-all group-hover/item:scale-105 duration-300 drop-shadow-[0_0_25px_rgba(124,58,237,0.4)]">
+        <div className="w-20 h-20 md:w-44 md:h-44 transition-all md:group-hover/item:scale-105 duration-300 drop-shadow-[0_0_25px_rgba(124,58,237,0.4)]">
           <img src="/dj.png" alt="DJ" className="w-full h-full object-contain" />
         </div>
-        <span className="text-[10px] md:text-[11px] font-mono font-bold text-purple-400 mt-1 uppercase tracking-widest bg-[#050a0e]/80 px-2 py-0.5 rounded-full border border-purple-500/20">DJ / Admin</span>
+        <span className="text-[9px] md:text-[11px] font-mono font-bold text-purple-400 mt-1 uppercase tracking-widest bg-[#050a0e]/80 px-2 py-0.5 rounded-full border border-purple-500/20">DJ / Admin</span>
       </div>
 
       {/* Connection 2: Splitter */}
@@ -95,16 +95,16 @@ function KaraokeFlow() {
       {/* Column 3: Cola & Karaoke */}
       <div className="flex flex-col justify-around h-[220px] md:h-[320px] shrink-0">
         <div className="relative z-10 flex flex-col items-center group/item">
-          <div className="w-20 h-20 md:w-36 md:h-36 transition-all group-hover/item:scale-105 duration-300 drop-shadow-[0_0_25px_rgba(0,229,255,0.4)]">
+          <div className="w-16 h-16 md:w-36 md:h-36 transition-all md:group-hover/item:scale-105 duration-300 drop-shadow-[0_0_25px_rgba(0,229,255,0.4)]">
             <img src="/cola.png" alt="Cola" className="w-full h-full object-contain" />
           </div>
-          <span className="text-[10px] md:text-[11px] font-mono font-bold text-cyan-400 mt-0.5 uppercase tracking-widest bg-[#050a0e]/80 px-2 py-0.5 rounded-full border border-cyan-400/20">Fila</span>
+          <span className="text-[9px] md:text-[11px] font-mono font-bold text-cyan-400 mt-0.5 uppercase tracking-widest bg-[#050a0e]/80 px-2 py-0.5 rounded-full border border-cyan-400/20">Fila</span>
         </div>
         <div className="relative z-10 flex flex-col items-center group/item">
-          <div className="w-20 h-20 md:w-36 md:h-36 transition-all group-hover/item:scale-105 duration-300 drop-shadow-[0_0_25px_rgba(236,72,153,0.4)]">
+          <div className="w-16 h-16 md:w-36 md:h-36 transition-all md:group-hover/item:scale-105 duration-300 drop-shadow-[0_0_25px_rgba(236,72,153,0.4)]">
             <img src="/karaoke.png" alt="Karaoke" className="w-full h-full object-contain" />
           </div>
-          <span className="text-[10px] md:text-[11px] font-mono font-bold text-pink-500 mt-0.5 uppercase tracking-widest bg-[#050a0e]/80 px-2 py-0.5 rounded-full border border-pink-500/20">Karaoke</span>
+          <span className="text-[9px] md:text-[11px] font-mono font-bold text-pink-500 mt-0.5 uppercase tracking-widest bg-[#050a0e]/80 px-2 py-0.5 rounded-full border border-pink-500/20">Karaoke</span>
         </div>
       </div>
     </div>
@@ -141,7 +141,7 @@ function ProjectCard({ project, featured = false }) {
               <img
                 src={project.mockup}
                 alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-700 md:group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#050a0e] to-transparent opacity-70" />
             </>

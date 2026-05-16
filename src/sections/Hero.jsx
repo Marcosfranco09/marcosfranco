@@ -36,8 +36,8 @@ export default function Hero() {
             &gt; Inicializando sistema... Bienvenido
           </p>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-4 leading-tight font-orbitron drop-shadow-[0_0_15px_rgba(0,229,255,0.3)]">
-            HOLA, SOY <br />
+          <h1 className="text-3xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight font-orbitron drop-shadow-[0_0_15px_rgba(0,229,255,0.3)]">
+            HOLA, SOY <br className="md:hidden" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600">
               MARCOS FRANCO
             </span>
