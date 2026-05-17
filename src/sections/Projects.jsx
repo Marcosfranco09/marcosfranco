@@ -24,6 +24,7 @@ const projects = [
     ],
     demo: 'https://puertochop-karaoke.onrender.com/',
     repo: 'https://github.com/Marcosfranco09/karaoke-bar',
+    mockup: '/karaoke-flow.jpg',
   },
   {
     title: 'ECOMMERCE GASTRONÓMICO',
@@ -132,20 +133,12 @@ function ProjectCard({ project, featured = false }) {
       >
         {/* Visual Block (Top) */}
         <div className={`relative ${featured ? 'w-full min-h-[300px] md:min-h-[380px]' : 'w-full aspect-video'} rounded-2xl overflow-hidden shadow-2xl bg-[#050a0e]/50 border border-white/5`}>
-          {project.id === 'karaoke' ? (
-            <div className="w-full h-full flex items-center justify-center p-2">
-              <KaraokeFlow />
-            </div>
-          ) : (
-            <>
-              <img
-                src={project.mockup}
-                alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-700 md:group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#050a0e] to-transparent opacity-70" />
-            </>
-          )}
+          <img
+            src={project.mockup}
+            alt={project.title}
+            className={`w-full h-full ${project.id === 'karaoke' ? 'object-contain bg-[#050a0e]/95 p-4' : 'object-cover'} transition-transform duration-700 md:group-hover:scale-110`}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050a0e] to-transparent opacity-70" />
         </div>
 
         <div className={`flex flex-col flex-1 mt-6`}>
